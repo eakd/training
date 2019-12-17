@@ -116,6 +116,8 @@ stages:
 
     webAppName: '$(DevEnvironemntWebAppName)'
 
+    appType: ${{ parameters.appType }}
+
 - template: templates/deploy.yml
 
   parameters:
