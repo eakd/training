@@ -114,7 +114,7 @@ stages:
 
     stageName: 'DeployDevelopment'
 
-    webAppName: '$(DevEnvironemntWebAppName)'
+    webAppName: '$(WebAppName-Dev)'
 
     appType: 'webAppLinux'
 
@@ -130,7 +130,7 @@ stages:
 
     stageName: 'DeployTest'
 
-    webAppName: '$(TestEnvironemntWebAppName)'
+    webAppName: '$(WebAppName-Test)'
     
     appType: 'webAppLinux'
 
