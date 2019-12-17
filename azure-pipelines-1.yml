@@ -116,7 +116,7 @@ stages:
 
     webAppName: '$(DevEnvironemntWebAppName)'
 
-    appType: ${{ parameters.appType }}
+    appType: 'webAppLinux'
 
 - template: templates/deploy.yml
 
@@ -131,6 +131,8 @@ stages:
     stageName: 'DeployTest'
 
     webAppName: '$(TestEnvironemntWebAppName)'
+    
+    appType: 'webAppLinux'
 
 - template: templates/deploy.yml
 
@@ -145,3 +147,5 @@ stages:
     stageName: 'DeployProduction'
 
     webAppName: '$(WebAppName)'
+
+    appType: 'webAppLinux'
